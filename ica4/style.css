@@ -12,10 +12,6 @@ body {
   
   /* Selectors to be matched up with rulesets */
   
- 
-  
-  
-  
   /* Rulesets to be matched up with selectors */
   
   .card{
@@ -38,6 +34,11 @@ body {
   }
   
   .card article img{
-    max-height: 100%;
+    max-height:120px;
     float: right;
+  }
+
+  h2{
+   font-size: 20px;
+   line-height: 30px;
   }
