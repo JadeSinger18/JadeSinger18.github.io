@@ -33,12 +33,37 @@ body {
     border-radius: 0 0 1.5em 1.5em;
   }
   
+  .card article p{
+    color:white;
+    padding-left: 10px;
+    padding-block: 10px;
+  }
+
+  .card article{
+    height:120px;
+    background-color: rgba(0, 0, 0, 0.127);
+  }
+
   .card article img{
     max-height:120px;
     float: right;
   }
+.card header, footer{
+  height:45px;
+  padding: 5px;
+}
 
   h2{
-   font-size: 20px;
-   line-height: 30px;
-  }
+    font-size: 20px;
+    margin: 0;
+}
+
+  p{
+  font-size: 10px;
+  margin: 0;
+}
+
+.card footer p{
+  font-size: 15px;
+  line-height: 10px;
+}
