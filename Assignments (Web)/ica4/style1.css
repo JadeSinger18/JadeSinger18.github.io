@@ -11,7 +11,7 @@
         color: hotpink;
         font-size: 2em;
         font-family: Georgia, 'Times New Roman', Times, serif;
-        border-bottom: 10px dashed purple;
+        border-bottom: 10px dotted purple;
       }
 
       h2 {
@@ -34,8 +34,8 @@
         color: green;
       }
       
-      .ul{
-        
+      ul{
+        background-color: #eeee;
         border: 5px solid purple;
-        padding: 0;
+        padding: 5;
       }
