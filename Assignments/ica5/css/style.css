@@ -9,13 +9,30 @@ html {
 body {
   margin: 0;
   background: #ccc;
+  
+  background-image: url(/Assignments/ica5/img/top-image.png),
+                    url(/Assignments/ica5/img/bottom-image.png);
+  background-repeat: no-repeat;
+
+
+  background: linear-gradient
+                 (rgba(0,0,0,0.25)0%,
+                  rgba(0, 0, 0, 0)25%,
+                  rgba(0,0,0,)75%,
+                  rgba(0,0,0,0.25) 100%,);
+  
+  background-color: #fff;
+  border-top:1mm solid red;
+  border-bottom: 1mm solid red;
+
+
 }
 
 article {
   width: 210mm;
   height: 297mm;
   margin: 20px auto;
-  position: relative;
+
 }
 
 address {
@@ -36,6 +53,12 @@ h1 {
   padding: 44px 0;
   color: white;
   text-shadow: 1px 1px 1px black;
+  
+  background-image: url(/Assignments/ica5/img/logo.png);
+  box-shadow: 4px 4px 4px black;
+  border-radius: 50%;
 }
 
 /* Your CSS below here */
+
+ 
