@@ -10,20 +10,21 @@ body {
   margin: 0;
   background: #ccc;
   
-  background-image: url(/Assignments/ica5/img/top-image.png);
-  background-repeat: no-repeat;
+  
 
 
-  background: linear-gradient
-                 (rgba(0,0,0,0.25)0%,
+  background: linear-gradient(rgba(0,0,0,0.25)0%,
                   rgba(0, 0, 0, 0)25%,
                   rgba(0,0,0,)75%,
-                  rgba(0,0,0,0.25) 100%,);
+                  rgba(0,0,0,0.25) 100%),
+                  url(/Assignments/ica5/img/top-image.png);
+  
+                  background-repeat: no-repeat;
   
   background-color: #fff;
   border-top:1mm solid red;
   border-bottom: 1mm solid red;
-
+  
 
 }
 
@@ -62,4 +63,5 @@ h1 {
 footer{
 background-image: url(/Assignments/ica5/img/bottom-image.png);
 background-repeat: no-repeat;
+
 }
