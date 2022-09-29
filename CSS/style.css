@@ -156,22 +156,7 @@ a:visited {
     color: #9D69F2;
     }
 
-/* ol {
-    position: absolute;
-    width: 65px;
-    height: 81px;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 27px;
-
-    color: #000000;
-    }
-*/
-
-/* ul {
+ol {
     position: absolute;
     width: 65px;
     height: 81px;
@@ -185,14 +170,29 @@ a:visited {
     color: #000000;
     }
 
-*/
+
+ul {
+    position: absolute;
+    width: 65px;
+    height: 81px;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+
+    color: #000000;
+    }
+
+
 nav {
-    background-color: #000;
+    background-color: #000000;
     padding: .5em;
     top: 0;
     position: sticky;
     }
-      
+     
 nav ul {
     margin: 0;
     padding: 0;
@@ -209,7 +209,7 @@ nav a {
     }
 
 
-.button {
+/*.button {
     position: absolute;
     width: 256px;
     height: 82px;
@@ -228,6 +228,7 @@ nav a {
     border-radius: 4px;
     transition-duration: 0.5s;
     }
+*/
 
 hr {
     position: absolute;
@@ -237,8 +238,23 @@ hr {
     border: 1px dashed #000000;
 }
 
-.photos {
-    max-width: 100%;
-    height: auto; 
 
+.div {
+    width: 300px;
+    border: solid black;
+    padding: 5px;
+    margin: 5px;
+    content: #A3A3A3;
+  }
+
+  @media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+  }
+
+@media only screen and (min-width: 800px) {
+    body {
+        background-color: lightcoral;
+    }
 }
