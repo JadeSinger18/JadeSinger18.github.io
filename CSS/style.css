@@ -8,7 +8,6 @@ body {
 
 
 h1 {
-    position: absolute;
     width: 390px;
     height: 49px;
 
@@ -197,7 +196,7 @@ nav {
      
 
 nav a {
-    color: #fff;
+    color: white;
     text-decoration: none;
     padding: .5em 1em;
     }
@@ -217,7 +216,7 @@ hr {
     padding: 0 20px;
     max-width: 980px;
     display: grid;
-    grid-template-columns: 3fr 1fr;  /*grid-template-columns: repeat(2,200px);*/
+    grid-template-columns: 1fr 1fr 1fr;  /*grid-template-columns: repeat(2,200px);*/
     gap: 20px;
     }
 
@@ -225,6 +224,13 @@ body {
     display: grid;
     grid-template-rows: auto;
 
+}
+
+img{
+    max-width: 100%;
+    display: block;
+    float: left;
+    margin-right: 1em;
 }
 
 @media only screen and (max-width: 600px) {
