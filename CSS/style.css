@@ -238,3 +238,8 @@ img{
         background-color: lightblue;
     }
   }
+
+picture{
+    width: 390px;
+    height: 49px;
+}
