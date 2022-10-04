@@ -186,11 +186,12 @@ nav {
     position: sticky;
     display:flex;
     flex-direction: row;
+    height: 100px;
     }
      
 
 nav a {
-    color: black;
+    color: #F85050;
     text-decoration: none;
     padding: .5em 1em;
     }
@@ -211,14 +212,35 @@ hr {
     max-width: 980px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;  /*grid-template-columns: repeat(2,200px);*/
-    gap: 10px;
+   
+    gap: 5px;
     }
+
+div{
+    grid-auto-rows: 1fr 1fr;
+}
+
 
 body {
     display: grid;
     grid-template-rows: auto;
 
 }
+
+.flex-container {
+    display: flex;
+    background-color: #A3A3A3;
+}
+
+.flex-container>nav a{
+    background-color: #A3A3A3;
+    color: #F85050;;
+    width: 100px;
+    margin: 15px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
 
 img{
     max-width: 100%;
