@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #c6c6c6;
     color: black;
     font-family: 'Open Sans';
     padding: 1em;
@@ -8,56 +8,54 @@ body {
 
 
 h1 {
-    width: 390px;
-    height: 49px;
+    width: 140px;
+    height: 50px;
+    padding-left: 12px;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 36px;
-    line-height: 49px;
+    font-size: 34px;
+    line-height: 50px;
 
     color: #000000;
+    border: 5px solid #BA3C3C;
   }
 
-
 h2 {
-    width: 317px;
-    height: 41px;
+    width: 140px;
+    height: 50px;
+    padding-left: 2px;
+    padding-top: 4px;
 
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
-    font-size: 30px;
+    font-size: 34px;
     line-height: 41px;
-    margin: 0;
 
     color: #000000;
+    border: 5px solid #BA3C3C;
   }
 
 
 h3 {
-    width: 249px;
-    height: 33px;
-    
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 600;
-    font-size: 24px;
+    font-size: 30px;
     line-height: 33px;
+    margin: 10px;
     
-    color: #000000;    
+    color: #808080;   
   }
  
   
 h4 {
-    width: 207px;
-    height: 27px;
-
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 25px;
     line-height: 27px;
 
     color: #000000;
@@ -65,26 +63,22 @@ h4 {
 
 
 h5 {
-    width: 170px;
-    height: 22px;
-
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 16px;
     line-height: 22px;
+    margin: 10px;
 
     color: #000000;
   }
 
 
 h6 {
-    width: 145px;
-    height: 19px;
 
     font-family: 'Open Sans';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 14px;
     line-height: 19px;
 
@@ -121,7 +115,7 @@ a:link {
     }
 
 
-/*a:hover {
+a:hover {
     position: absolute;
     width: 123px;
     height: 27px;
@@ -132,14 +126,14 @@ a:link {
     font-size: 20px;
     line-height: 27px;
 
-    color: #A3A3A3;
-    }
-*/
+    color: #BA3C3C;
+}
 
-/*a:visited {
-    position: absolute;
+
+/* a:visited {
+    
     width: 134px;
-    height: 27px;
+    height: 27px; 
 
     font-family: 'Open Sans';
     font-style: normal;
@@ -147,13 +141,13 @@ a:link {
     font-size: 20px;
     line-height: 27px;
 
-    color: #9D69F2;
-    }
-*/
+    color: #BA3C3C;
+    } */
+
 ol {
-    position: absolute;
-    width: 65px;
-    height: 81px;
+    
+    /* width: 65px;
+    height: 81px; */
 
     font-family: 'Open Sans';
     font-style: normal;
@@ -181,7 +175,8 @@ ul {
 
 
 nav {
-    background-color: #A3A3A3;
+    background-color: #808080;
+    border: 3px solid black;
     padding: 0;
     top: 0;
     position: sticky;
@@ -207,18 +202,6 @@ hr {
     border: 1px dashed #000000;
 }
 
-.grid {
-    margin: 20px auto;
-    padding: 0 20px;
-    max-width: 980px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;  /*grid-template-columns: repeat(2,200px);*/
-   
-    gap: 5px;
-    }
-
-
-
 body {
     display: grid;
     grid-template-rows: auto;
@@ -227,11 +210,11 @@ body {
 
 .flex-container {
     display: flex;
-    background-color: #A3A3A3;
+    background-color: #808080;;
 }
 
 .flex-container>div {
-    background-color: #A3A3A3;
+    background-color: #808080;
     color: #F85050;;
     width: 100px;
     margin: 0;
@@ -253,22 +236,192 @@ img{
   }
 
 
+
+
+
+.Index-Container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin: 20px;
+}
+
+.Index-Grid-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+    width: 285px;
+    height: 250px;
+    padding-left: 6px;
+    padding-top: 5px;
+    margin-right: 30px;
+
+    color: #000000;
+    border: 5px solid #BA3C3C;
+}
+
+.Index-Grid-2{
+    grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+
+
+
+
 .About-Container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 5px;
 }
 
 .About-Grid-1 {
     grid-column-start: 1;
     grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .About-Grid-2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 
 .About-Grid-3 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.About-Grid-4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.About-Grid-5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+.About-Grid-6 {
     grid-column-start: 3;
     grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+.About-Grid-7 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 5;
+}
+
+
+
+
+
+.Project-Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 5px;
+}
+
+.Project-Grid-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.Project-Grid-2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+.Project-Grid-3 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.Project-Grid-4 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.Project-Grid-5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+.Project-Grid-6 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+
+
+
+.Contact-Container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    margin: 5px;
+}
+
+.Contact-Grid-1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.Contact-Grid-2 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+    width: 200px;
+    height: 100px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+
+    color: #000000;
+    border: 2px solid #BA3C3C;
+}
+
+.Contact-Grid-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    width: 220px;
+    height: 100px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+
+    color: #000000;
+    border: 2px solid #BA3C3C;
+}
+
+.Contact-Grid-4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
