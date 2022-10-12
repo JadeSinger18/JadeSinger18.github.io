@@ -87,8 +87,8 @@ h6 {
 
 
 p {
-    width: 136px;
-    height: 19px;
+    /*width: 136px;
+    height: 19px;*/
 
     font-family: 'Open Sans';
     font-style: normal;
@@ -425,3 +425,19 @@ img{
     grid-row-start: 2;
     grid-row-end: 3;
 }
+
+body {
+    background-color: #c6c6c6;
+}
+
+div {
+    height: 1000px;
+}
+
+button {
+    background-color: #BA3C3C;
+    border: 2px solid black;
+    width: 100px;
+    height: 50px;
+}
+
