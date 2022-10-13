@@ -426,16 +426,13 @@ img{
     grid-row-end: 3;
 }
 
-body {
-    background-color: #c6c6c6;
-}
 
 
 button {
     background-color: #BA3C3C;
     border: 2px solid black;
     width: 100px;
-    transition-duration: 0.5s;
+    
 }
 
 
