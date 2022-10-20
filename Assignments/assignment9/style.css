@@ -1,0 +1,49 @@
+h1 {
+  font-family: 'Open Sans';
+  text-align: center;
+  color: #000000;
+  border: 5px solid #BA3C3C;
+  width: 400px;
+  padding-bottom: 5px;
+}
+
+body {
+  width: 640px;
+  margin: 0 auto;
+  background-color: #c6c6c6;
+}
+
+.full-img {
+  position: relative;
+  display: block;
+  width: 320px;
+  height: 215px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 215px;
+  background-color: rgba(0,0,0,0);
+}
+
+button {
+  border: 0;
+  color: white;
+  background: #5b5b5b;
+  text-shadow: 1px 1px 1px black;
+  border: 2px solid #BA3C3C;
+  position: absolute;
+  cursor: pointer;
+  top: 2px;
+  left: 2px;
+}
+
+.thumb-bar img {
+  display: block;
+  width: 20%;
+  float: left;
+  cursor: pointer;
+}
