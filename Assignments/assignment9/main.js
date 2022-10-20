@@ -14,7 +14,7 @@ const alts = {
     'Sunset2.JPG' : 'Sunset with a tree',
     'Sunset3.JPG' : 'Sunset with lots of orange and yellow and lake',
     'Rainbow.JPG' : 'A double rainbow',
-    'Lake.JPG' : 'Lake with sun'
+    'Lake.JPG' : 'Lake and sunset'
     }
 
 /* Looping through images */
