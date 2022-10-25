@@ -43,10 +43,28 @@
       let male = 0;
 
       // Add your code here
+    const cats = JSON.parse(catString);
 
-      [
+    for (let i = 0; i < cats.length; i++) {
+      for (const kitten of cats[i].kittens) {
+        total++;
+        if (kitten.gender === 'm') {
+          male++;
+        }
+      }
+
+      if (i < (cats.length - 1)) {
+        motherInfo += `${ cats[i].name }, `;
+      } else {
+        motherInfo += `and ${ cats[i].name }.`;
+      }
+    }
+
+    kittenInfo  = `There are ${ total } kittens in total, ${ male } males and ${ total - male } females.`;
+
+[ 
   {
-    "name" : "Lindy",
+   "name" : "Lindy",
     "breed" : "Cymric",
     "color" : "white",
     "kittens" : [
@@ -64,6 +82,7 @@
       }
     ]
   },
+
   {
     "name" : "Mina",
     "breed" : "Aphrodite Giant",
@@ -83,6 +102,7 @@
       }
     ]
   },
+
   {
     "name" : "Antonia",
     "breed" : "Ocicat",
