@@ -7,7 +7,7 @@ let Sam = {
     Department : "Tech",
     Designation : "Manager",
     Salary : 40000,
-    RaiseEligible : True
+    RaiseEligible : true
   }; 
 
 let Mary = {
@@ -15,7 +15,7 @@ let Mary = {
     Department : "Finance",
     Designation : "Trainee",
     Salary : 18500,
-    RaiseEligible : True
+    RaiseEligible : true
   };
 
 let Bill = {
@@ -23,7 +23,7 @@ let Bill = {
     Department : "HR",
     Designation : "Executive",
     Salary : 21200,
-    RaiseEligible : False
+    RaiseEligible : false
   };
 
 console.log("problem 1", Sam, Mary, Bill);
@@ -36,7 +36,7 @@ const Company = {
     Employees : [Sam, Mary, Bill],
   };
   
-console.log("problem 2", company);
+console.log("problem 2", Company);
 
 // Problem 3   
 
@@ -45,10 +45,10 @@ console.log("problem 2", company);
         Department : "Tech",
         Designation : "Executive",
         Salary : 25600,
-        Raise eligible : False
+        RaiseEligible : false
     });
 
-console.log("problem 3", company);
+console.log("problem 3", Company);
 
 // Problem 4
 
@@ -61,21 +61,21 @@ console.log("problem 4", sum);
 
 // Problem 5
 
-for (let i = 0; i < company.employees.length; i++){ 
-    if (Company.Employees[i].Raise){
+for (let i = 0; i < Company.Employees.length; i++){ 
+    if (Company.Employees[i].RaiseEligible){
         Company.Employees[i].Salary *= 1.1;
-        Company.Employees[i].Raise = false;
+        Company.Employees[i].RaiseEligible = false;
     }
 }
 
-console.log("problem 5", company);
+console.log("problem 5", Company);
 
 // Problem 6
 
 const peopleWFH =['Anna','Sam']; 
 
-for (vsar i = 0 < Company.Employees.length; i++){
-    Company.Employees[i]wfh =peopleWFH.includes(Company.Employees[i].Name):
+for (var i = 0; i < Company.Employees.length; i++){
+    Company.Employees[i].wfh =peopleWFH.includes(Company.Employees[i].Name);
 }
 
-console.log("problem 6", company);
+console.log("problem 6", Company);
