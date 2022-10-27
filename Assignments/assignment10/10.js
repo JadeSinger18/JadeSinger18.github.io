@@ -44,8 +44,8 @@ console.log("problem 2", company);
         Name : "Anna", 
         Department : "Tech",
         Designation : "Executive",
-        Salary : "25600",
-        Raise eligible : "False"
+        Salary : 25600,
+        Raise eligible : False
     });
 
 console.log("problem 3", company);
