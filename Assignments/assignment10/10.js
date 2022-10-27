@@ -1,4 +1,4 @@
-const json= 
+
 
 // Problem 1
 
@@ -30,17 +30,17 @@ console.log("problem 1", Sam, Mary, Bill);
 
 // Problem 2
 
-const company = { 
+const Company = { 
     companyName : "Tech Stars", 
-    website : "www.techstars.site",
-    employees : [Sam, Mary, Bill],
+    Website : "www.techstars.site",
+    Employees : [Sam, Mary, Bill],
   };
   
 console.log("problem 2", company);
 
 // Problem 3   
 
-    company.employees.push({
+    Company.Employees.push({
         Name : "Anna", 
         Department : "Tech",
         Designation : "Executive",
@@ -53,8 +53,8 @@ console.log("problem 3", company);
 // Problem 4
 
 let sum = 0; 
-for (let i = 0; i<company.employees.length; i++){
-    sum += company.employees[i].salary;
+for (let i = 0; i < Company.Employees.length; i++){
+    sum += Company.Employees[i].Salary;
 }
 
 console.log("problem 4", sum);
@@ -62,9 +62,9 @@ console.log("problem 4", sum);
 // Problem 5
 
 for (let i = 0; i < company.employees.length; i++){ 
-    if (company.employees[i].raise){
-        company.employees[i].salary *= 1.1;
-        company.employees[i].raise = false;
+    if (Company.Employees[i].Raise){
+        Company.Employees[i].Salary *= 1.1;
+        Company.Employees[i].Raise = false;
     }
 }
 
@@ -74,8 +74,8 @@ console.log("problem 5", company);
 
 const peopleWFH =['Anna','Sam']; 
 
-for (vsar i = 0 < company.employees.length; i++){
-    company.employees[i]wfh =peopleWFH.includes(company.employees[i].name):
+for (vsar i = 0 < Company.Employees.length; i++){
+    Company.Employees[i]wfh =peopleWFH.includes(Company.Employees[i].Name):
 }
 
 console.log("problem 6", company);
