@@ -8,14 +8,25 @@ html {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
-  }
+}
   
-  body {
+body {
     font-family: 'Open Sans';
     background-color: #c6c6c6;
-  }
-  
-  .app {
+}
+
+p{
+    position:fixed;
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background: #c6c6c6;
+    padding: 25px;
+    text-align:cneter;
+}
+
+.app {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -25,33 +36,35 @@ html {
     border: 5px solid #BA3C3C;
     border-radius: 10px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-  }
+}
   
-  header {
+header {
     width: 100%;
     font-size: 30px;
     text-align: center;
     padding: 10px;
-    border-bottom: 1px solid #BA3C3C;
-  }
+    border-bottom: 5px solid #BA3C3C;
+    font-family: 'Open Sans';
+    color: white;
+}
   
-  .quotes {
+.quotes {
     padding: 20px 50px;
     min-height: 200px;
-  }
+}
   
-  .quote-text {
+.quote-text {
     padding-bottom: 20px;
     font-size: 25px;
     color: white;
-  }
+}
   
-  .controls {
+.controls {
     width: 100%;
     padding: 20px 50px;
-  }
+}
   
-  .button {
+.button {
     display: block;
     color: white;
     border-radius: 4px;
@@ -62,37 +75,94 @@ html {
     width: 100%;
     font-size: 20px;
     box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
-  }
+}
   
-  .twitter {
+.twitter {
     background-color: #1da1f2;
     text-decoration: none;
-  }
+}
   
-  .twitter:hover {
+.twitter:hover {
     background-color: #167ebe;
-  }
+}
   
-  .new-quote {
+.new-quote {
     background-color: #F85050;
     margin-bottom: 15px;
-  }
+}
   
-  .new-quote:hover {
+.new-quote:hover {
     background-color: #BA3C3C;
-  }
+}
   
-  .new-quote:disabled {
+.new-quote:disabled {
     background-color: #c6c6c6;
     color: #808080;
     cursor: not-allowed;
-  }
+}
+
+.spinner {
+    margin: 10px auto;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+}
   
-  @media screen and (max-width: 600px) {
+.spinner.hidden {
+    visibility: hidden;
+}
+  
+.spinner > div {
+    background-color: #F85050;
+    height: 50px;
+    width: 12px;
+    display: inline-block;
+  
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+}
+  
+.spinner .rect2 {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+  
+.spinner .rect3 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+  
+.spinner .rect4 {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+  
+.spinner .rect5 {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+  
+@-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
+    20% { -webkit-transform: scaleY(1.0) }
+}
+  
+@keyframes sk-stretchdelay {
+    0%, 40%, 100% {
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% {
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+}
+
+@media screen and (max-width: 600px) {
     .app {
       width: 100%;
     }
     .quote-text {
       font-size: 18px;
     }
-  }
+}
