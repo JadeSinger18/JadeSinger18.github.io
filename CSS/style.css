@@ -426,9 +426,8 @@ img{
     grid-row-end: 3;
 }
 
-
-
-.button {
+input.button {
+    display: block;
     background-color: #BA3C3C;
     border: 2px solid black;
     width: 100px;
