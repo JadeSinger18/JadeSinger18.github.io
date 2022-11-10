@@ -1,45 +1,68 @@
-var high = 9999999999; 
-var low = 0000000000; 
+const output = document.querySelector('.output');
+let outputInt = parseInt(output.textContent);
 
-var start = 5555555555; 
+document.addEventListener("keydown", keyPress, false);
 
 
-$(document).ready(function() {
-  
-  $('#small').click(small);
-  $('#big').click(big);
-  
-  $('#submit').click(submit);
-  
-}); 
+function keyPress(e) {
+    var keyCode = e.keyCode;
+      if(keyCode==189) {
+      alert("You hit the minus key.");
+      minus();
+      } 
+      
+      else if(keyCode==187) {
+        alert("You hit the plus key.");
+        plus();
+      }
+      
+      else if(keyCode==82) {
+        alert("You hit the reset key.");
+        reset();
+      }
+
+      else if(keyCode==83) {
+        alert("You hit the submit key.");
+        submit();
+      }
+
+      else {
+      alert("Whoops");
+      }
+      //console.log(keyCode);
+    }
+
+
+const minusKey = document.querySelector('.minus-key').addEventListener('keypress', minus);
+const plusKey = document.querySelector('.plus-key').addEventListener('keypress', plus);
+const resetKey = document.querySelector('.reset-key').addEventListener('keypress', reset);
+const submitKey = document.querySelector('.submit-key').addEventListener('keypress', submit);
+
+
+function check() {
+    console.log('test');
+}
 
 function submit() {
-  alert("You submitted: " + numberToString(start)); 
+    alert(output.textContent);
 }
 
-function numberToString(p) {
-  var sp = "" + p; 
-  var acc = ""; 
-  for(var i=0; i < sp.length; i++) {
-    acc += sp.charAt(i);
-    if([2, 5].indexOf(i) != -1) {
-      acc += "-";
+function reset() {
+    outputInt = 0;
+    output.textContent = outputInt;
+}
+
+function minus() {
+     if (outputInt > 0) {
+    outputInt -= 1;
+    output.textContent = outputInt;
+     }
+}
+
+function plus() {
+    if (outputInt < 999999999) {
+    outputInt += 1;
+    output.textContent = outputInt; 
     }
-  }
-  return acc; 
 }
 
-function updateDisplay() {
-  start = Math.floor((high + low) / 2); 
-  $("#phone-number").html(numberToString(start)); 
-}
-
-function small() {
-    high = start - 1; 
-  updateDisplay(); 
-}
-
-function big() {
-    low = start + 1; 
-  updateDisplay(); 
-}
