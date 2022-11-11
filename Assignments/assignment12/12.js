@@ -60,7 +60,7 @@ function minus() {
 }
 
 function plus() {
-    if (outputInt < 999999999) {
+    if (outputInt < 9999999999) {
     outputInt += 1;
     output.textContent = outputInt; 
     }
