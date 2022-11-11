@@ -1,10 +1,10 @@
 const output = document.querySelector('.output');
 let outputInt = parseInt(output.textContent);
 
-const minusKey = document.querySelector('.minus-key').addEventListener('keypress', minus);
-const plusKey = document.querySelector('.plus-key').addEventListener('keypress', plus);
-const resetKey = document.querySelector('.reset-key').addEventListener('keypress', reset);
-const submitKey = document.querySelector('.submit-key').addEventListener('keypress', submit);
+const minusKey = document.querySelector('.minus-key').addEventListener('keydown', minus);
+const plusKey = document.querySelector('.plus-key').addEventListener('keydown', plus);
+const resetKey = document.querySelector('.reset-key').addEventListener('keydown', reset);
+const submitKey = document.querySelector('.submit-key').addEventListener('keydown', submit);
 
 
 
