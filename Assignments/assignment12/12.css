@@ -7,16 +7,19 @@ body {
   }
 
 p {
-    /*width: 136px;
-    height: 19px;*/
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
 
+    width: 325px;
+    height: 20px;
+
     color: #000000;
+    border: 5px solid #282828;
+    padding: 10px;
+    padding-left: 10px;
 }
 
 h1 {
@@ -25,31 +28,24 @@ h1 {
     font-weight: 700;
     font-size: 34px;
     line-height: 50px;
+    border-bottom: 5px solid #F85050;
+    width: 625px;
+    padding-left: 10px;
   }
 
 h2 {
-    /*width: 140px;
-    height: 50px;*/
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 34px;
     line-height: 41px;
 
-    color: #5f5f5f;
+    color: #282828;
 
-    /*color: #000000;
-    border: 5px solid #BA3C3C;*/
-  }
-
-
-h3 {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 30px;
-    line-height: 33px;
-    margin: 10px;
+    width: 250px;
+    height: 40px;
     
-    color: black;   
+    border: 10px inset #BA3C3C;
+    padding: 10px;
+    padding-left: 10px;
   }
