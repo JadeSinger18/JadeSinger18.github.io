@@ -13,22 +13,22 @@ document.addEventListener("keypress", keyPress, false);
 
 function keyPress(e) {
     var keyCode = e.keyCode;
-      if(keyCode==189) {
+      if(keyCode==45) {
       alert("You hit the minus key.");
       minus();
       } 
       
-      else if(keyCode==187) {
+      else if(keyCode==61) {
         alert("You hit the plus key.");
         plus();
       }
       
-      else if(keyCode==82) {
+      else if(keyCode==114) {
         alert("You hit the reset key.");
         reset();
       }
 
-      else if(keyCode==83) {
+      else if(keyCode==115) {
         alert("You hit the submit key.");
         submit();
       }
@@ -36,13 +36,11 @@ function keyPress(e) {
       else {
       alert("Whoops");
       }
-      //console.log(keyCode);
+      console.log(keyCode);
 }
 
 
-function check() {
-    console.log('test');
-}
+
 
 function submit() {
     alert(output.textContent);

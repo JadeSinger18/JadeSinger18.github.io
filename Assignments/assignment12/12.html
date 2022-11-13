@@ -14,12 +14,16 @@
         <h2 class="output">0000000000</h2>
     </div>
     <form>
-        <div class="keypress">
-        <p>Press the minus button on the keyboard to subtract.</p>
-        <p>Press the plus button on the keyboard to add.</p>
-        <p>Press the r button on the keyboard to reset.</p>
-        <p>Press the s button on the keyboard to submit.</p>
-        </div>
+        <input class="minus-key" type="hidden" name="minus-key" value="-">
+        <input class="plus-key" type="hidden" name="plus-key" value="+">
+        <input class="reset-key" type="hidden" name="reset-key" value="Reset">
+        <input class="submit-key" type="hidden" name="submit-key" value="Submit"> 
+    <div class="keyPress">
+    <p>Press the minus button on the keyboard to subtract.</p>
+    <p>Press the plus button on the keyboard to add.</p>
+    <p>Press the r button on the keyboard to reset.</p>
+    <p>Press the s button on the keyboard to submit.</p>
+    </div>
     </form>
     <div>
         <script defer src="12.js"></script>
