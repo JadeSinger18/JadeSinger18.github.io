@@ -46,6 +46,7 @@ var mousePosition = {
      //update cursor co ordinates
      mousePosition.x = event.clientX;
      mousePosition.y = event.clientY;
+     
      //set fishing line to follow cursor
      fishingLine.style.left= mousePosition.x+"px";
      fishingLine.style.top = mousePosition.y+"px";
@@ -58,11 +59,5 @@ function startGame () {
         score = 0;
     }
     currentScore=0;
-    infoWrapper.style.display = "none";
-    startTitle.style.display = "none";
-    clickContainer.style.display = "block";
-    gameStats.style.display = "flex";
-    gameGoal.style.display = "block";
-    createItems();
 }
 
