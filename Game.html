@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fishing /'</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+
+</head>
+<body>
+    <div id="game-container">
+        <h6 id="start-title">Gone Fishing!</h6>
+        <div id="info-wrapper">
+            <div id="instructions"></div>
+            <button id="start-btn"><span class="arrow"></span></button>
+        </div>
+        <div id="game-stats">
+            <span id="game-day">Day 1</span>
+
+            <div id="clock">
+                <svg viewBox="0 0 120 120" class="chart-gauge" fill="none" stroke-width="4">
+                    <circle class="timer-backdrop" r="40" cx="60" cy="60"></circle>
+                    <circle class="timer-gauge" r="40" cx="60" cy="60"></circle>
+                    <text y="50%" x="50%" id="game-timer" class="timer-time">15s</text>
+                </svg>
+            </div>
+            <span id="game-score">Total Score: 0</span>
+        </div>
+        <p id="game-goal"></p>
+    </div>
+    <div id="click-container">
+        <span id="line"></span>
+    </div>
+    <div id="bubbles"></div>
+
+    <script defer src="main.js"></script>
+</body>
+</html>
