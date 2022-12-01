@@ -68,16 +68,16 @@ h5 {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    margin: 10px;
+    margin: 5px;
 
     color: #000000;
   }
 
 
 h6 {
-    width: 270px;
-    height: 50px;
-    padding-left: 10px;
+    padding-left: 15px;
+    margin: 20px;
+    
 
     font-family: 'Open Sans';
     font-style: normal;
@@ -85,6 +85,8 @@ h6 {
     font-size: 34px;
     line-height: 50px;
 
+    width: 225px;
+    height: 50px;
     color: #000000;
     border: 5px solid #BA3C3C;
   }
@@ -382,8 +384,8 @@ img{
 
 .Gallery-Container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 5px;
+    grid-template-columns: 1fr;
+    margin: 2px;
 }
 
 .Gallery-Grid-1 {
@@ -395,7 +397,7 @@ img{
 
 .Gallery-Grid-2 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
 }
@@ -418,51 +420,66 @@ img{
 
 .HighSchoolGallery-Grid-2 {
     grid-column-start: 1;
-    grid-column-end: 4;
+    grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin: 15px;
 }
 
 .HighSchoolGallery-Grid-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 15px;
+}
+
+.HighSchoolGallery-Grid-4 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 15px;
+}
+
+.HighSchoolGallery-Grid-5 {
     grid-column-start: 4;
     grid-column-end: 5;
     grid-row-start: 2;
     grid-row-end: 3;
-}
-
-.HighSchoolGallery-Grid-4 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 4;
-    grid-row-end: 5;
-}
-
-.HighSchoolGallery-Grid-5 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    margin: 15px;
 }
 
 .HighSchoolGallery-Grid-6 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 15px;
 }
 
 .HighSchoolGallery-Grid-7 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 4;
-    grid-row-end: 5;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 15px;
 }
 
 .HighSchoolGallery-Grid-8 {
-    grid-column-start: 5;
-    grid-column-end: 6;
-    grid-row-start: 5;
-    grid-row-end: 6;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 15px;
+}
+
+.HighSchoolGallery-Grid-9 {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    margin: 15px;
 }
 
 
@@ -480,15 +497,32 @@ img{
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    margin: 15px;
 }
 
 .CollegeGallery-Grid-2 {
     grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 15px;
+}
+
+.CollegeGallery-Grid-3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin: 15px;
+}
+
+.CollegeGallery-Grid-4 {
+    grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 3;
+    margin: 15px;
 }
-
 
 
 
