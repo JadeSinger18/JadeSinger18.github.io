@@ -228,6 +228,7 @@ body {
     font-size: 30px;
   }
 
+
 img{
     max-width: 100%;
     display: block;
@@ -239,6 +240,10 @@ img{
     body {
         background-color: lightblue;
     }
+    img{
+        margin:10%;
+    }
+    
   }
 
 
