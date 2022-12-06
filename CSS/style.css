@@ -267,11 +267,15 @@ body {
     margin: 0;
     line-height: 75px;
     font-size: 30px;
-  }
+}
 
+canvas {
+    width: 1400px;
+    height: 700px;
+}
 
 img{
-    max-width: 100%;
+    max-width: 75%;
     display: block;
     float: left;
     margin-right: 1em;
@@ -298,9 +302,6 @@ img{
 }
 
 
-
-
-
 .Index-Container {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -325,9 +326,6 @@ img{
     grid-column-start: 3;
     grid-column-end: 4;
 }
-
-
-
 
 
 .About-Container {
@@ -385,9 +383,6 @@ img{
 }
 
 
-
-
-
 .Project-Container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -436,9 +431,6 @@ img{
 }
 
 
-
-
-
 .Gallery-Container {
     display: grid;
     grid-template-columns: 1fr;
@@ -458,130 +450,6 @@ img{
     grid-row-start: 2;
     grid-row-end: 3;
 }
-
-
-
-
-.HighSchoolGallery-Container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 5px;
-}
-
-.HighSchoolGallery-Grid-1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.HighSchoolGallery-Grid-2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin: 15px;
-}
-
-.HighSchoolGallery-Grid-3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin: 15px;
-}
-
-.HighSchoolGallery-Grid-4 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin: 15px;
-}
-
-.HighSchoolGallery-Grid-5 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin: 15px;
-}
-
-.HighSchoolGallery-Grid-6 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin: 15px;
-}
-
-.HighSchoolGallery-Grid-7 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin: 15px;
-}
-
-.HighSchoolGallery-Grid-8 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin: 15px;
-}
-
-.HighSchoolGallery-Grid-9 {
-    grid-column-start: 4;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    margin: 15px;
-}
-
-
-
-
-
-.CollegeGallery-Container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 5px;
-}
-
-.CollegeGallery-Grid-1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-    margin: 15px;
-}
-
-.CollegeGallery-Grid-2 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin: 15px;
-}
-
-.CollegeGallery-Grid-3 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin: 15px;
-}
-
-.CollegeGallery-Grid-4 {
-    grid-column-start: 3;
-    grid-column-end: 4;
-    grid-row-start: 2;
-    grid-row-end: 3;
-    margin: 15px;
-}
-
-
 
 
 .Contact-Container {
