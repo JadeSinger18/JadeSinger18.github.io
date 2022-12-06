@@ -33,3 +33,4 @@ for (const image of images) {
       displayedImage.alt = e.target.alt;
     });
   }
+
