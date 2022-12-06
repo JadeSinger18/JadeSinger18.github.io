@@ -68,17 +68,19 @@ h5 {
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
-    margin: 5px;
+    margin: 10px;
 
     color: #000000;
   }
 
 
 h6 {
+    width: 140x;
+    height: 50px;
     padding-left: 15px;
-    margin: 20px;
+    margin-top: 22px;
+    margin-bottom: 22px;
     
-
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
@@ -89,6 +91,7 @@ h6 {
     height: 50px;
     color: #000000;
     border: 5px solid #BA3C3C;
+
   }
 
 
