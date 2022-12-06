@@ -32,3 +32,5 @@ makeRandomSquares(2);
 document.addEventListener("click", function(){
   makeRandomSquares(2);
 }, false);
+
+//Code Borrowed https://stackoverflow.com/questions/49807779/drawing-square-using-canvas-javascript
