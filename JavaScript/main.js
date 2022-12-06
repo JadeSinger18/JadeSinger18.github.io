@@ -2,7 +2,7 @@ const displayedImage = document.querySelector('.displayed-img');
 const thumbBar = document.querySelector('.thumb-bar');
 
 /* Declaring the array of image filenames */
-const images = ["../Img/Reeses.jpg", "../Img/Monkey.jpg", "../Img/Turtle.jpg", "../Img/Moon.jpg", "../Img/Telescope.PNG", "../Img/Earth.jpg", "../Img/Portrait.jpeg", "../Img/Penguin.jpg", "../Img/MoonLander.PNG", "../Img/Space.JPG", "../Img/Lamp.jpeg", "../Img/SpiderMan.jpeg"]
+const images = ["../Img/Reeses.jpg", "../Img/Monkey.jpg", "../Img/Turtle.jpg", "../Img/Moon.jpg", "../Img/Telescope.PNG", "../Img/Earth.jpg","../Img/Rose.jpeg", "../Img/Portrait.jpeg", "../Img/Penguin.jpg", "../Img/MoonLander.PNG", "../Img/Space.JPG", "../Img/Lamp.jpeg", "../Img/SpiderMan.jpeg"]
 
 /* Declaring the alternative text for each image file */
 
@@ -19,6 +19,7 @@ const alts = {
     'MoonLander.PNG' : 'MoonLander',
     'Telescope.PNG' : 'Telescope',
     'Earth.jpg' : 'Earth',
+    'Rose.jpeg' : 'Rose'
     }
 
 /* Looping through images */
