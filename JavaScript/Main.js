@@ -57,9 +57,8 @@ var array = ['makeRandomSquares','makeRandomCircles','makeRandomTriangles']
 
 var ranFunc;
 
-function start() { // Randomly Execute Function
+function start() {
  ranFunc = array[Math.floor(Math.random() * array.length)];
- console.log(ranFunc);
  if (ranFunc == 'makeRandomSquares') {
   makeRandomSquares(2);
  }
@@ -74,25 +73,5 @@ function start() { // Randomly Execute Function
 document.addEventListener("click", function(){
   start();
 }, false);
-
-
-//initialize with 2 squares
-//makeRandomSquares(2);
-//make 2 more squares each click
-//document.addEventListener("click", function(){
-  //makeRandomSquares(2); //make random array
-//}, false);
-
-//makeRandomCircles(2);
-//make 2 more squares each click
-//document.addEventListener("click", function(){
- // makeRandomCircles(2); //make random array
-//}, false);
-
-//makeRandomTriangles(2);
-//make 2 more squares each click
-//document.addEventListener("click", function(){
-  //makeRandomTriangles(2); //make random array
-//}, false);
 
 //Code Borrowed https://stackoverflow.com/questions/49807779/drawing-square-using-canvas-javascript
